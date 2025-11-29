@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pranav Vinod · Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grid-overlay"></div>
+  <div class="cursor-halo" id="cursorHalo"></div>
+
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <div class="brand-row">Pranav Vinod<span class="dot">.</span></div>
+        <div class="brand-sub">Class of 2027</div>
+      </div>
+
+      <nav id="nav">
+        <button class="nav-link active" data-target="hero-section">OVERVIEW</button>
+        <button class="nav-link" data-target="profile-section">PROFILE</button>
+        <button class="nav-link" data-target="projects-section">PROJECTS</button>
+        <button class="nav-link" data-target="experience-section">EXPERIENCE</button>
+        <button class="nav-link" data-target="contact-section">CONTACT</button>
+      </nav>
+
+      <div class="header-cta-row">
+        <button class="chip-btn primary-pill" id="downloadCvBtn">
+          <span>Download Resume</span>
+        </button>
+        <button class="mobile-nav-toggle" id="mobileNavToggle">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero-section">
+      <div class="hero">
+        <div class="hero-photo-wrap" id="heroPhoto">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo-inner">
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-badge">11th Grade · Dublin High School</div>
+          <div class="hero-title">Hello, I&apos;m</div>
+          <div class="hero-title-main">
+            <span class="accent">Pranav</span><br />Vinod
+          </div>
+          <p class="hero-subtitle">
+            Student developer passionate about
+            <span class="bold">programming, design, </span> and
+            <span class="bold">real-world problem solving.</span>
+          </p>
+
+          <div class="hero-buttons">
+            <button class="hero-btn primary" id="heroContactBtn">
+              <span class="icon">✉</span>
+              Contact me
+            </button>
+            <button class="hero-btn" id="heroProjectsBtn">
+              <span class="icon">➜</span>
+              View projects
+            </button>
+          </div>
+
+          <div class="hero-buttons" style="margin-top: 1rem;">
+          <div class="hero-socials">
+            <span>Find me on:</span>
+
+            <a href="https://github.com/kingqwerty6259" aria-label="GitHub" class="social">
+              <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub">
+            </a>
+
+            <a href="https://linkedin.com/in/pranav-vinod-68bb3438a" aria-label="LinkedIn" class="social">
+              <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a href="https://www.instagram.com/pranav.vinod__" aria-label="Instagram" class="social">
+              <img src="https://cdn.simpleicons.org/instagram/ffffff" alt="Instagram">
+            </a>
+
+            <a href="mailto:pranav6259@gmail.com" aria-label="Email" class="social">
+              <img src="https://cdn.simpleicons.org/maildotru/ffffff" alt="Email">
+            </a>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SNAPSHOT / SHORT PROFILE -->
+    <section id="profile-section">
+      <div class="section-heading">
+        <small>Short profile</small>
+        <h2>A quick <span class="accent">snapshot</span> of who I am</h2>
+        <p>
+          A quick overview of me, what I&apos;ve built, and the tools
+          I use most often.
+        </p>
+      </div>
+
+      <div class="profile-grid">
+        <article class="profile-card image-card tilt">
+          <div class="image-card-inner">
+            <div class="image-card-media"></div>
+            <div class="image-card-overlay">
+              <div class="image-card-text">
+                I'm a high school junior with interest in both 
+                <span class="highlight">software development</span> and
+                <span class="highlight">3D Design</span>. I spend a lot of my time learning new things and how things are made, from building websites, experimenting with animation and modeling, or improving the way my ideas translate to the screen. I enjoy combining the technical side of coding with the creative freedom and ability of 3D, and I'm always trying to make both functional and visually appealing projects.
+              </div>
+              <div class="image-card-footer">
+                About Me
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+        <article class="profile-card lang-card tilt">
+          <h3>Languages</h3>
+          <p>
+            I’m fluent in English and Malayalam, and comfortable communicating and collaborating with people in both languages.
+          </p>
+
+        </article>
+
+
+        <article class="profile-card stack-card tilt">
+          <h3>Technical Knowledge</h3>
+          <div class="profile-pillstack">
+            <span class="profile-pill">Python</span>
+            <span class="profile-pill">Blender</span>
+            <span class="profile-pill">HTML</span>
+            <span class="profile-pill">CSS</span>
+            <span class="profile-pill">C#</span>
+            <span class="profile-pill">DaVinci Resolve</span>
+            <span class="profile-pill">JavaScript</span>
+            <span class="profile-pill">Unity</span>
+            <span class="profile-pill">Unreal Engine</span>
+            <span class="profile-pill">Photoshop</span>
+            <span class="profile-pill">After Effects</span>
+            <span class="profile-pill">Affinity Photo</span>
+          </div>
+        </article>
+
+
+        <article class="profile-card role-card tilt">
+          <h3>How I Think</h3>
+          <p>
+            I like understanding how things work before I build them. Whether its code, animation, or an idea for design, I aways break it down, experiment, and find the approach that makes the most sense to me. My favorite thing in what I do is solving problems step by step, learning things as I go, and refining details until everything works as intended. I consider myself to be curious, and I think the best work comes from natural discovery and experimentation.
+          </p>
+          <div class="profile-pillstack">
+            <span class="profile-tag">Curious</span>
+            <span class="profile-tag">Problem-solver</span>
+            <span class="profile-tag">Logical</span>
+            <span class="profile-tag">Visual Thinker</span>
+            <span class="profile-tag">Learns Fast</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects-section">
+      <div class="section-heading">
+        <small>Selected work</small>
+        <h2>A small selection of <span class="accent">recent achievements</span></h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card tilt">
+          <div class="project-media">
+            Image to be added
+          </div>
+          <div class="project-body">
+            <div class="project-title">Klattworks Internship</div>
+            <div class="project-desc">
+              During my time with KlattWorks, I worked on developing a automated test suite designed to assess behavior and catch issues in the hardware through specific stress tests. I focused on writing reliable test cases, automating repetitive checks, and helping improve the overall stability of the codebase. This project gave me hands-on experience with real-world software testing, debugging, and writing Python scripts for automation.
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tech">
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span>Year: 2025</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card tilt">
+          <div class="project-media">
+            Image To br Added
+          </div>
+          <div class="project-body">
+            <div class="project-title">Aced</div>
+            <div class="project-desc">When working on Aced, I built a custom flashcard platform designed to make studying more efficient and engaging for students. The goal of the tool was to simplify the learning process by breaking information into small pieces, helping users memorize concepts faster through active recall and spaced repetition. This project gave me experience designing an educational tool that balances simplicity, and functionality, while addressing student learning needs.
+            </div>
+            <div class="project-meta-row">
+              <div class="project-tech">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Firebase</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-footer">
+            <span>Year: 2024</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience-section">
+      <div class="section-heading">
+        <small>My experience</small>
+        <h2>What I&apos;ve <span class="accent">been learning</span></h2>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card tilt">
+          <div class="experience-icon">💻</div>
+          <div>
+            <div class="experience-title">Web Development</div>
+            <div class="experience-body">Learning front-end fundamentals, writing cleaner HTML/CSS/JS, and experimanting with animations and interactivity within webpages.
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-card tilt">
+          <div class="experience-icon">💫</div>
+          <div>
+            <div class="experience-title">3D Animation and Modeling</div>
+            <div class="experience-body">Improving modeing, lighting, rendering, and learning efficient Blender workflows.
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-card tilt">
+          <div class="experience-icon">🎮</div>
+          <div>
+            <div class="experience-title">Game Development</div>
+            <div class="experience-body">Using Unity and Unreal to understand C# and game-logic based programming.
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-card tilt">
+          <div class="experience-icon">⚙️</div>
+          <div>
+            <div class="experience-title">Problem Solving & Logic</div>
+            <div class="experience-body"> Strengthening understanding of programming concepts through functional Python script and projects.
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact-section">
+      <div class="section-heading">
+        <small>Get in touch</small>
+        <h2>Let&apos;s <span class="accent">talk</span></h2>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-card tilt" id="contactForm">
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input id="name" class="field" type="text" placeholder="Your name" />
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" class="field" type="email" placeholder="you@example.com" />
+          </div>
+          <div class="field-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              class="field"
+              placeholder=""
+            ></textarea>
+          </div>
+          <button type="submit" class="hero-btn primary" style="margin-top: 0.2rem;">
+            <span class="icon">✉</span>
+            Send message
+          </button>
+          <p class="contact-meta" id="contactStatus">
+            This doesn't work right now.
+          </p>
+        </form>
+
+        <aside class="contact-card tilt">
+          <div class="contact-row"> 
+          <span class="value">Feel free to contact me about projects, collaborations, internships, or anything you think I could help with. I’m comfortable with web development, Python scripting, 3D modeling, and game engine workflows, and I’m always open to learning something new. I try to respond promptly and keep communication clear and easy.</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Built with HTML · CSS · Vanilla JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
