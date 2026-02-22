@@ -71,7 +71,7 @@
 
     // Download resume 
     downloadCvBtn.addEventListener("click", () => {
-      window.open("cv.pdf", "_blank");
+      window.open("VinodPranavResume.pdf", "_blank");
     });
 
 
